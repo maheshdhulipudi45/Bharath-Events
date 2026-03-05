@@ -132,7 +132,7 @@ const Index = () => {
               <img src={mandapam2} alt="Kalyana Mandapam" className="w-full aspect-[4/3] object-cover" />
             </motion.div>
             <motion.div {...fadeUp} transition={{ delay: 0.2 }}>
-              <h2 className="font-heading text-3xl font-bold mb-4">Bharath Kalyana Mandapam</h2>
+              <h2 className="font-heading text-3xl font-bold mb-4">Sri Manikyamba Kalyana Mandapam</h2>
               <p className="text-muted-foreground mb-5 leading-relaxed">
                 Our beautiful Kalyana Mandapam is the perfect venue for your dream wedding. With 500+ seating capacity, AC halls, dining facilities, and complete decoration services.
               </p>

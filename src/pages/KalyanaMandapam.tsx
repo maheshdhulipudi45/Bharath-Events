@@ -139,7 +139,7 @@ const KalyanaMandapam = () => {
       <Navbar />
 
       {/* Hero Slider */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="relative h-[75vh] overflow-hidden">
         {sliderImages.map((img, i) => (
           <motion.div
             key={i}
@@ -162,7 +162,7 @@ const KalyanaMandapam = () => {
             className="text-center"
           >
             <h1 className="font-heading text-4xl md:text-6xl font-bold text-card mb-4">
-              Bharath Kalyana Mandapam
+              Sri Manikyamba KalyanaMandapam
             </h1>
             <p className="text-card/80 text-lg mb-6">The perfect venue for your dream wedding</p>
             <a href="#booking" className="btn-gold">Book Your Mandapam</a>
