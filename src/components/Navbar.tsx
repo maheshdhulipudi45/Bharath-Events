@@ -17,10 +17,15 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto flex items-center justify-between py-3 md:py-4">
-        <Link to="/" className="font-heading text-xl md:text-2xl font-bold text-primary">
-          Bharath Tent House
-        </Link>
+      <div className="container mx-auto flex items-center justify-between py-2 md:py-4 px-3">
+       <Link to="/" className="flex flex-col leading-tight">
+  <span className="font-heading text-lg md:text-2xl font-bold text-primary tracking-wide">
+    BHARATH
+  </span>
+  <span className="text-[8px] md:text-xs tracking-[2px] text-muted-foreground uppercase">
+    Tent House & Lighting
+  </span>
+</Link>
 
         {/* Desktop */}
         <ul className="hidden lg:flex items-center gap-6">
@@ -38,7 +43,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="tel:+919876543210"
+              href="tel:+917658956116"
               className="btn-gold inline-flex items-center gap-2 !px-5 !py-2.5 text-sm"
             >
               <Phone size={16} />

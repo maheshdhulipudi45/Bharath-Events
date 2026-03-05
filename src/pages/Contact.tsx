@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919949708345";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
@@ -72,8 +72,8 @@ const Contact = () => {
               </p>
 
               {[
-                { icon: Phone, label: "Phone", value: "+91 98765 43210", href: "tel:+919876543210" },
-                { icon: MessageCircle, label: "WhatsApp", value: "+91 98765 43210", href: "https://wa.me/919876543210" },
+                { icon: Phone, label: "Phone", value: "+91 9618678345", href: "tel:+919618678345" },
+                { icon: MessageCircle, label: "WhatsApp", value: "+91 9949708345", href: "https://wa.me/919949708345" },
                 { icon: Mail, label: "Email", value: "info@bharathtenthouse.com", href: "mailto:info@bharathtenthouse.com" },
                 { icon: MapPin, label: "Location", value: "Konaseema, Andhra Pradesh" },
               ].map((item) => (
@@ -95,7 +95,7 @@ const Contact = () => {
               ))}
 
               <a
-                href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20inquire%20about%20your%20services."
+                href="https://wa.me/919949708345?text=Hello%2C%20I%20want%20to%20inquire%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold inline-flex items-center gap-2"
@@ -152,8 +152,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg"
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122251.99955028072!2d81.64!3d16.57!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37d0f0e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sKonaseema%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.6751234531703!2d82.14897899999998!3d16.683629200000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37f50033732933%3A0x2d2ce9639531b0a8!2sSri%20Manikyamba%20Nilayam!5e1!3m2!1sen!2sin!4v1772720723641!5m2!1sen!2sin" 
               width="100%"
               height="350"
               style={{ border: 0 }}

@@ -1,0 +1,111 @@
+// import { CheckCircle2 } from "lucide-react";
+// import { Link } from "react-router-dom";
+
+// const points = [
+//   "15+ Years Experience",
+//   "Wedding Decorations",
+//   "Tent House & Lighting",
+//   "Mandapam Booking",
+// ];
+
+// const AboutPreview = () => {
+//   return (
+//     <section className="section-padding bg-card">
+//       <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+
+//         <div className="flex justify-center">
+//           <div className="w-44 h-44 rounded-full bg-secondary flex items-center justify-center">
+//             <span className="text-5xl font-bold text-primary">BT</span>
+//           </div>
+//         </div>
+
+//         <div>
+//           <h2 className="font-heading text-3xl font-bold mb-4">
+//             About Bharath Tent House
+//           </h2>
+
+//           <p className="text-muted-foreground mb-5">
+//             We provide premium event decoration and tent house services across Konaseema.
+//           </p>
+
+//           <ul className="space-y-2 mb-6">
+//             {points.map((pt) => (
+//               <li key={pt} className="flex items-center gap-2">
+//                 <CheckCircle2 size={18} className="text-primary" />
+//                 {pt}
+//               </li>
+//             ))}
+//           </ul>
+
+//           <Link to="/about" className="text-primary font-semibold">
+//             Learn More →
+//           </Link>
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default AboutPreview;
+
+
+
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { CheckCircle2 } from "lucide-react";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
+
+const AboutPreview = () => {
+  return (
+<section className="section-padding bg-card">
+  <div className="container mx-auto">
+    <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+
+      <motion.div {...fadeUp} className="flex justify-center">
+        <div className="w-44 h-44 md:w-52 md:h-52 rounded-full bg-secondary border-4 border-primary shadow-lg flex items-center justify-center">
+          <span className="font-heading text-5xl font-bold text-primary">BT</span>
+        </div>
+      </motion.div>
+
+      <motion.div {...fadeUp}>
+        <h2 className="font-heading text-3xl font-bold mb-4">
+          About Bharath Tent House
+        </h2>
+
+        <p className="text-muted-foreground mb-5 leading-relaxed text-justify">
+          With over 10 years of experience, we are the most trusted name in wedding decoration, tent house services, and event rentals across Konaseema.
+        </p>
+
+        <ul className="space-y-2.5 mb-6">
+          {[
+            "15+ Years Experience",
+            "Wedding & Birthday Decorations",
+            "Tent House & Lighting",
+            "Kalyana Mandapam Booking",
+            "Serving Konaseema & Nearby Areas",
+          ].map((pt) => (
+            <li key={pt} className="flex items-center gap-2.5 text-sm font-medium">
+              <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
+              {pt}
+            </li>
+          ))}
+        </ul>
+
+        <Link to="/about" className="text-primary font-semibold hover:underline">
+          Learn More →
+        </Link>
+      </motion.div>
+
+    </div>
+  </div>
+</section>
+  );
+};
+
+export default AboutPreview;
