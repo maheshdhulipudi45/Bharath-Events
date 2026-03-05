@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 37 33% 97%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 41 52% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 37 33% 95%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 37 20% 93%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 41 52% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 37 20% 88%;
+    --input: 37 20% 88%;
+    --ring: 41 52% 54%;
+
+    --radius: 0.75rem;
+
+    --gold: 41 52% 54%;
+    --gold-light: 41 60% 70%;
+    --gold-dark: 41 55% 40%;
+    --cream: 37 33% 97%;
+    --cream-dark: 37 33% 93%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-xl
+           transition-all duration-300 hover:shadow-[0_0_20px_hsl(41_52%_54%/0.4)]
+           hover:scale-105 active:scale-95;
+  }
+
+  .btn-gold-outline {
+    @apply border-2 border-primary text-primary font-semibold px-8 py-3 rounded-xl
+           transition-all duration-300 hover:bg-primary hover:text-primary-foreground
+           hover:shadow-[0_0_20px_hsl(41_52%_54%/0.4)] hover:scale-105 active:scale-95;
+  }
+
+  .card-elegant {
+    @apply bg-card rounded-2xl shadow-[0_4px_20px_hsl(0_0%_0%/0.06)]
+           overflow-hidden transition-all duration-300
+           hover:shadow-[0_8px_30px_hsl(0_0%_0%/0.12)] hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(41 52% 54%), hsl(41 60% 70%));
+  }
+
+  .footer-gradient {
+    background: linear-gradient(135deg, hsl(30 20% 18%), hsl(35 25% 12%));
+  }
+
+  .image-hover-zoom {
+    @apply overflow-hidden;
+  }
+
+  .image-hover-zoom img {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+}
