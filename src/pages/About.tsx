@@ -3,13 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import { CheckCircle2, Award, Palette, Lightbulb, ShieldCheck, Heart } from "lucide-react";
+import ownerImg from "@/assets/owner.jpg";
 
 const bulletPoints = [
-  "15+ Years Experience in Event Decorations",
+  "10+ Years Experience in Event Decorations",
   "Wedding & Birthday Event Setup",
   "Tent House & Lighting Services",
   "Kalyana Mandapam Booking",
-  "Serving Konaseema & Nearby Areas",
+  "Serving Muramalla & Nearby Areas",
 ];
 
 const whyChooseUs = [
@@ -39,8 +40,14 @@ const About = () => {
               className="flex justify-center"
             >
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-secondary border-4 border-primary shadow-lg flex items-center justify-center overflow-hidden">
-                <span className="font-heading text-5xl font-bold text-primary">BT</span>
-              </div>
+
+  <img
+    src={ownerImg}
+    alt="Bharath Tent House Owner"
+    className="w-full h-full object-cover"
+  />
+
+</div>
             </motion.div>
 
             {/* Text */}
@@ -50,13 +57,19 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="font-heading text-2xl font-bold mb-4">Bharath Tent House & Lighting</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-justify">
-                With over 15 years of experience, Bharath Tent House & Lighting has been the most trusted name in 
-                wedding decoration, tent house services, and event rentals across Konaseema and nearby areas. 
-                We specialize in creating memorable events with our premium tents, stunning lighting setups, 
-                elegant furniture rentals, and our beautiful Kalyana Mandapam.
-              </p>
+           <h3 className="font-heading text-2xl font-bold mb-4">
+  Bharath Tent House & Lighting
+</h3>
+
+<p className="text-muted-foreground mb-6 leading-relaxed text-justify">
+  Bharath Tent House & Lighting was founded and managed by 
+  <strong> Suribabu Dhulipudi </strong> from <strong>Pasuvullanka</strong>. 
+  With over <strong>10+ years of experience</strong>, our business has become a trusted name in 
+  wedding decorations, tent house services, and event rentals across Pasuvullanka and nearby areas. 
+  We specialize in creating memorable events with premium tents, beautiful lighting setups, 
+  elegant furniture rentals, and complete event arrangements including Kalyana Mandapam services. 
+  Our goal is to make every celebration grand, well-organized, and unforgettable for our customers.
+</p>
 
               <ul className="space-y-3">
                 {bulletPoints.map((point, i) => (

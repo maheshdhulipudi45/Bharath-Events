@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
 }
 
 const WhatsAppButton = ({ message, label = "Book on WhatsApp" }: WhatsAppButtonProps) => {
-  const phone = "919876543210";
+  const phone = "919949708345";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   return (

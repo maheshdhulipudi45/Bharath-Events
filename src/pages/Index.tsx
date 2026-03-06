@@ -356,7 +356,7 @@ import RentalsPreview from "@/components/home/RentalsPreview";
 import GalleryPreview from "@/components/home/GalleryPreview";
 import ServiceLocations from "@/components/home/ServiceLocations";
 import ContactCTA from "@/components/home/ContactCTA";
-
+import WhatsappFloat from "@/components/home/WhatsappFloat";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -382,6 +382,7 @@ const Index = () => {
       <ServiceLocations />
 
       <ContactCTA />
+      <WhatsappFloat />
 
       <Footer />
 

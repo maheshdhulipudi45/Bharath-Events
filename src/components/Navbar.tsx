@@ -43,7 +43,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="tel:+917658956116"
+              href="tel:+919618678345"
               className="btn-gold inline-flex items-center gap-2 !px-5 !py-2.5 text-sm"
             >
               <Phone size={16} />
@@ -55,7 +55,7 @@ const Navbar = () => {
         {/* Mobile actions */}
         <div className="flex items-center gap-3 lg:hidden">
           <a
-            href="tel:+919876543210"
+            href="tel:+919618678345"
             className="btn-gold inline-flex items-center gap-1.5 !px-4 !py-2 text-xs"
           >
             <Phone size={14} />

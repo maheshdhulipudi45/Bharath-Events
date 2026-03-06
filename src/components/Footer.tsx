@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold text-gold-light mb-4">Bharath Tent House</h3>
           <p className="text-cream/80 text-sm leading-relaxed text-justify">
             Premium wedding decoration, tent house, lighting and event rental services. 
-            Serving Konaseema & nearby areas with 15+ years of experience.
+            Serving Pasuvullanka & nearby areas with 10+ years of experience.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
           <ul className="space-y-3 text-cream/80 text-sm">
             <li className="flex items-center gap-2">
               <Phone size={16} className="text-gold-light" />
-              +91 98765 43210
+              +91 9618678345
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} className="text-gold-light" />
@@ -60,7 +60,7 @@ const Footer = () => {
             </li>
             <li className="flex items-start gap-2">
               <MapPin size={16} className="text-gold-light mt-0.5" />
-              Konaseema, Andhra Pradesh
+              Pasuvullanka, Andhra Pradesh
             </li>
           </ul>
           <div className="flex gap-4 mt-4">
@@ -71,8 +71,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-10 pt-6 border-t border-cream/10 text-center text-cream/50 text-xs">
-        © 2024 Bharath Tent House & Lighting. All rights reserved.
+      <div className="container mx-auto mt-10 pt-5 border-t border-cream/10 text-center text-cream/50 text-xs">
+        © 2026 Bharath Tent House & Lighting. All rights reserved.
+        <p className="py-2">Designed By Mahesh Dhulipudi</p>
+        <p>Contact:- 7658956116</p>
       </div>
     </footer>
   );

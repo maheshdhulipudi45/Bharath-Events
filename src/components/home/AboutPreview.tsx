@@ -54,7 +54,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
-
+import ownerImg from "@/assets/owner.jpg";
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -68,9 +68,15 @@ const AboutPreview = () => {
     <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
 
       <motion.div {...fadeUp} className="flex justify-center">
-        <div className="w-44 h-44 md:w-52 md:h-52 rounded-full bg-secondary border-4 border-primary shadow-lg flex items-center justify-center">
-          <span className="font-heading text-5xl font-bold text-primary">BT</span>
-        </div>
+        <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-secondary border-4 border-primary shadow-lg flex items-center justify-center overflow-hidden">
+
+  <img
+    src={ownerImg}
+    alt="Bharath Tent House Owner"
+    className="w-full h-full object-cover"
+  />
+
+</div>
       </motion.div>
 
       <motion.div {...fadeUp}>
@@ -84,11 +90,11 @@ const AboutPreview = () => {
 
         <ul className="space-y-2.5 mb-6">
           {[
-            "15+ Years Experience",
+            "10+ Years Experience",
             "Wedding & Birthday Decorations",
             "Tent House & Lighting",
             "Kalyana Mandapam Booking",
-            "Serving Konaseema & Nearby Areas",
+            "Serving Pasuvullanka & Nearby Areas",
           ].map((pt) => (
             <li key={pt} className="flex items-center gap-2.5 text-sm font-medium">
               <CheckCircle2 className="text-primary flex-shrink-0" size={18} />
