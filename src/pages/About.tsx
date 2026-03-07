@@ -117,7 +117,7 @@ const About = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer/>
     </div>
   );
 };

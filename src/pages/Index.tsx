@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
 import HeroSection from "@/components/home/HeroSection";
 import AboutPreview from "@/components/home/AboutPreview";
  import ServicesPreview from "@/components/home/ServicesPreview";
@@ -38,8 +37,7 @@ const Index = () => {
 
       <ContactCTA />
       <WhatsappFloat />
-
-      <Footer />
+       <Footer />
 
     </div>
   );
